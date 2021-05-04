@@ -29,24 +29,7 @@ body {
   margin-left: 25px,auto;
 }
 
-.vid_top_left{
-  grid-column:1;
-  /* grid-row: 1 */
-}
-.vid-top-right{
-  grid-column:2;
-  /* grid-row: 1; */
-}
 
-.vid-bottom-left{
-  grid-column: 1;
-  /* grid-row: 2; */
-}
-
-.vid_bottom-right{
-  grid-column: 2;
-  /* grid-row: 2; */
-}
 
 .footer {
   position: relative;     

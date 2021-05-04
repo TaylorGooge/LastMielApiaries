@@ -1,47 +1,76 @@
 <!DOCTYPE html>
 <html>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">  
   <link rel = "stylesheet" type="text/css" href="homepagestyle.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <title> Last Miel Apiaries </title>
 <body>
-  
-  <div class= "top_nav">
-      
-    <img src= "C:\Users\taylo\Desktop\LMA Website/bee_logo.png" alt = "open source bee photo" >
-    <header class= "lma_header">Last Miel Apiaries</header>
-  <a href="homepage.html">Home</a>
-  <a href="#news">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="#news">News</a>
-  <a href="#contact">Store</a>
-  <a href="youtube.html">Youtube Channel</a>
-  </div>
-  
-    <div class = "base_text">
-    <h1>Check out our youtube page</h1>
-    <p class = "para_text">Check out the lastest happenings in our beeyard...</p>
-    </div> 
-    <section class = "youtube_vids">
-      <div class = "vid-top-left">
-        <iframe  src="https://www.youtube.com/embed/7fZFSyS0weE" title = "Youtube video player"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-      </div>
-      <div class = "vid-top-right">
-      
-        <iframe   src="https://www.youtube.com/embed/ryhjt1dSpnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-      </div>
-      <div class = "bottom-left">
-        <iframe   src="https://www.youtube.com/embed/y3DK8PehkoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-      </div>
-      <div class = "bottom_right">
-        <iframe   src="https://www.youtube.com/embed/iPCmS-qDPKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </section>
-     
-    <div class = "footer">   
-    Last Miel Apiaries <br>
-    848 North Bronough Street <br>
-    Tallahassee, Florida 32303 <br>
-    lastmielapiaries@gmail.com <br>
+  <!-- header and logo -->
+  <div class = "row">
+    <div class = "col">
+      <img src= "C:\Users\taylo\Desktop\LMA Website/bee_logo.png" alt = "open source bee photo" >
     </div>
+    <div class = "col">
+      <header class= "lma_header">Last Miel Apiaries</header>
+    </div>
+  </div>
+ 
+ 
+  <!-- nav bar -->
+  <nav class= "navbar navbar-expand-lg bg-secondary navbar-dark justify-content-center" >
+    <div class = "containter fluid">
+      <ul class = "navbar-nav">
+        <li class = "nav-item"><a class = "nav-link" href="homepage.html">Home</a></li>
+        <li class = "nav-item"> <a class = "nav-link" href="#news">About</a> </li>
+        <li class = "nav-item"><a class = "nav-link" href="contact.html">Contact</a> </li>
+        <li class = "nav-item"><a  class = "nav-link"href="#news">News</a></li>
+        <li class = "nav-item"><a  class = "nav-link"href="#store">Store</a></li>
+        <li class ="nav-item active"><a class = "nav-link" href="youtube.html">Youtube Channel</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+    <div class = "container text-center" style = "background:#b9a88a">
+      <p>We started our Youtube page in order to document our growth as
+         beginner beekeeper.
+      </p>
+      <p>
+        Check out what's going on in our beeyard in our latest youtube videos linked below.
+      </p>
+
+
+    <div class = "container bg-light">
+      <!-- top row of grid -->
+      <div class = "row">
+        <div class = "col" align= "center">
+        <iframe  src="https://www.youtube.com/embed/7fZFSyS0weE" title = "Youtube video player"frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+        </div>
+        <div class = "col" align = "center">
+        <iframe   src="https://www.youtube.com/embed/ryhjt1dSpnM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+         </div>
+      </div>
+  
+      <!-- second row of grid -->
+      <div class = "row">
+          <div class = "col" align= "center">
+          <iframe   src="https://www.youtube.com/embed/y3DK8PehkoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+          </div>
+          <div class = "col" align= "center">
+          <iframe   src="https://www.youtube.com/embed/iPCmS-qDPKo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+    </div>
+     
+  <!-- footer -->
+  <footer class = "page-footer font small text-white bg-secondary">
+    <div class = "container text-center">
+      <p>Last Miel Apiaries </p>
+      <p>848 North Bronough Street </p>
+      <p>Tallahassee, Florida 32303 </p>
+      <p>lastmielapiaries@gmail.com </p>
+    </div>
+  </footer>
 
 </body>
 </html>

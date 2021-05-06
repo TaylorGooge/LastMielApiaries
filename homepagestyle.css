@@ -25,7 +25,21 @@ body {
 .contact-form{
   background-color: gray;
 }
+.blog_title{
+  color:black;
+}
+.blog_byline{
+  color: black;
+}
 
+.col{
+  justify-content: center;
 
+}
+
+.main-title{
+  justify-content: left;
+  font-size: 40pt;
+}
 
   

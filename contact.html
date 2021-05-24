@@ -11,8 +11,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
-  <!--  my own stylesheet -->
+  <!--  my own stylesheet and scripts -->
     <link rel = "stylesheet" type="text/css" href="homepagestyle.css"/>
+    <script src= "scripts.js"></script>
     
     <title> Last Miel Apiaries </title>
   </head>
@@ -21,6 +22,7 @@
   <!-- header and logo -->
   <div class = "row">
     <div class = "col">
+     <!-- logo credit: https://pixabay.com/illustrations/bee-logo-icon-insect-nature-2389834/ -->
       <img src= "C:\Users\taylo\Desktop\LMA Website/bee_logo.png" alt = "open source bee photo" >
     </div>
     <div class = "col">
@@ -36,8 +38,8 @@
         <li class = "nav-item"><a class = "nav-link" href="homepage.html">Home</a></li>
         <li class = "nav-item"> <a class = "nav-link" href="about.html">About</a> </li>
         <li class = "nav-item active"><a class = "nav-link" href="contact.html">Contact</a> </li>
-        <li class = "nav-item"><a  class = "nav-link"href="#news">News</a></li>
-        <li class = "nav-item"><a  class = "nav-link"href="#store">Store</a></li>
+        <li class = "nav-item"><a  class = "nav-link"href="news.html">News</a></li>
+        <li class = "nav-item"><a  class = "nav-link"href="store.html">Store</a></li>
         <li class ="nav-item"><a class = "nav-link" href="youtube.html">Youtube Channel</a></li>
       </ul>
     </div>
@@ -45,30 +47,31 @@
 
   <!-- contact form -->
     <div class = "container" style = "background:#b9a88a">
-    <p>Contact Us</p>
+    <p class = "main-title">Contact Us</p>
     <div class = "contact-form">
-    <form>
+    <form action= "https://formspree.io/f/xdoygnbn" method = "POST" onsubmit="confirm()">
+ 
         <fieldset>
           <!-- name -->
           <div class = "form-outline mb-4">
             <label class = "form-label" for = "contactname" ></label>
-            <input class = "form-control" type = "text" id = "contactname" placeholder = "Name" required>
+            <input class = "form-control" type = "text" id = "contactname" name = "name" placeholder = "Name" required>
           </div>
 
           <!-- email -->
           <div class= "form-outline mb-4">
             <label class="form-label" for = "contactemail"></label>
-            <input class = "form-control" type = "email" id ="contactemail" placeholder= "E-mail" required>
+            <input class = "form-control" type = "email" id ="contactemail" placeholder= "E-mail" name = "e-mail" required onchange="isValidEmail(document.getElementById('contactemail').value)">
           </div>
 
           <!-- message -->
           <div class = "form-outline mb-4">
             <label class = "form-label" for= "contactmessage"></label>
-            <textarea class = "form-control" rows = "5" id= "contactmessage" placeholder = "Message" required></textarea>
+            <textarea class = "form-control" rows = "5" id= "contactmessage" placeholder = "Message" name = "message" required></textarea>
           </div>
 
           <!-- submit -->
-        <button type = "button" class= "btn btn-light">Submit</button>
+        <button type = "submit" class= "btn btn-light">Submit</button>
         </fieldset>
     </form>
     </div>
@@ -80,7 +83,7 @@
       <p style="margin: 0px">Last Miel Apiaries </p>
       <p style="margin: 0px">848 North Bronough Street </p>
       <p style="margin: 0px">Tallahassee, Florida 32303 </p>
-      <p style="margin: 0px">lastmielapiaries@gmail.com </p>
+      <a href="mailto:lastmielapiaries@gmail.com"><p style="margin: 0px">  lastmielapiaries@gmail.com </p> </a>
     </div>
   </footer>
 

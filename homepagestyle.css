@@ -3,7 +3,6 @@ body {
   height: 100%;
 }
 
-
 .lma_header{
   font-family: Brush Script MT, cursive;
   color: white;
@@ -18,18 +17,9 @@ body {
 .form-label{
   padding: 10px;
 }
-.form-input{
-  width: auto;
-  margin: 20px;
-}
+
 .contact-form{
   background-color: gray;
-}
-.blog_title{
-  color:black;
-}
-.blog_byline{
-  color: black;
 }
 
 .col{
@@ -37,9 +27,15 @@ body {
 
 }
 
-.main-title{
-  justify-content: left;
-  font-size: 40pt;
+.beekeepinglinkswrapper{
+  text-align: left;
 }
 
+.beekeepinglinkstitle{
+  text-align: center;
+}
   
+.borders { 
+  border: 1px solid;
+  
+}
